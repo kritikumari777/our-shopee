@@ -1,5 +1,3 @@
-import fetch from 'node-fetch';
-
 export async function GET(request) {
   try {
     const res = await fetch('https://fakestoreapi.com/products');
