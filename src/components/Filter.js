@@ -1,4 +1,4 @@
-const Filter = ({selectedCategory, onChange ,categories }) => {
+const Filter = ({ selectedCategory, onChange, categories }) => {
     return (
         <select
             value={selectedCategory}

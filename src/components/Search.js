@@ -1,6 +1,6 @@
 import { TEXTS } from "@/app/constants/texts"
 
-const Search = ({search, onChange }) => {
+const Search = ({ search, onChange }) => {
     return (
         <input
             type="text"
