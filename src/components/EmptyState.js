@@ -1,10 +1,16 @@
-import React from 'react'
+import { TEXTS } from '@/app/constants/texts'
+import Link from 'next/link'
 
-const EmptyState = () => {
+const EmptyState = ({ title, isViewCard }) => {
     return (
-        <p className="text-center text-gray-500 text-lg mt-10">
-            No products found 😕
-        </p>
+        <div className="container py-5 text-center">
+            <h2 className="text-2xl font-semibold mb-4">{title}</h2>
+            {isViewCard &&
+                <Link href="/" className="btn btn-primary">
+                    {TEXTS.BACK_TO_SHOP}
+                </Link>
+            }
+        </div>
     )
 }
 

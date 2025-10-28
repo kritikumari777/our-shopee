@@ -1,6 +1,6 @@
-import React from 'react'
+import { TEXTS } from '@/app/constants/texts';
 
-const AddToCard = ({key, product, onAdd }) => {
+const ProductCard = ({key, product, onAdd }) => {
     return (
     <div key={key} className="border rounded p-4 shadow-sm flex flex-col">
       <img src={product.image} alt={product.title} className="h-40 object-contain mb-3" />
@@ -11,11 +11,11 @@ const AddToCard = ({key, product, onAdd }) => {
           className="mt-2 btn btn-primary w-full"
           onClick={() => onAdd(product)}
         >
-          Add to Cart
+         {TEXTS.ADD_TO_CART}
         </button>
       </div>
     </div>
   );
 }
 
-export default AddToCard
+export default ProductCard

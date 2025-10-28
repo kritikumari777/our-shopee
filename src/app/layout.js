@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import ReduxProvider from "@/providers/ReduxProvider";
+import { TEXTS } from "./constants/texts";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: 'My Shop',
-  description: 'Next.js shop demo'
+  title: TEXTS.APP_TITLE,
+  description: TEXTS.APP_SES
 }
 
 export default function RootLayout({ children }) {
