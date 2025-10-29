@@ -33,7 +33,7 @@ export default function CartPage() {
         <h4 className="fw-bold">Total Price: ₹{totalAmount}</h4>
       </div>
       <div className="mt-4 text-end">
-        <Link href="/" className="btn btn-primary">
+        <Link href="/" className="btn btn-outline-success">
          {TEXTS.CONTINUE_SHOPING}
         </Link>
       </div>

@@ -6,31 +6,42 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# My Shop — Next.js Screening Assignment
 
-## Learn More
+## Tech
+- Next.js (App Router)
+- JavaScript
+- TailwindCSS + Bootstrap
+- Redux Toolkit (for cart state management)
+- FakeStore API proxied at `/api/products`
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Features
+- Product listing with image, title, and price  
+- Add to cart and view cart  
+- Update quantity and remove items  
+- Persistent cart via `localStorage`  
+- Search products by name  
+- Filter products by category  
+- Next.js API route for products (`/api/products`)  
+- Deployed on **Netlify**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧠 Implementation Highlights
+- Products are fetched via a **custom Next.js API route** (`/api/products`).
+- The **Redux store** manages cart state, including add/remove and quantity updates.
+- **LocalStorage** ensures cart data persists after page refresh.
+- **Search** and **Filter** components provide real-time product filtering.
+- **Tailwind CSS** ensures a clean and responsive layout.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Run locally
+1. `npm install`
+2. `npm run dev`
+3. Open `http://localhost:3000`
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

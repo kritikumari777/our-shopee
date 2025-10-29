@@ -8,7 +8,7 @@ const ProductCard = ({ key, product, onAdd }) => {
             <div className="mt-auto">
                 <div className="font-semibold">₹ {product.price}</div>
                 <button
-                    className="mt-2 btn btn-primary w-full"
+                    className="mt-2 btn btn-outline-success w-full"
                     onClick={() => onAdd(product)}
                 >
                     {TEXTS.ADD_TO_CART}

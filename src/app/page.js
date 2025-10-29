@@ -85,7 +85,7 @@ export default function Page() {
         <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
           <Search search={search} onChange={(e) => setSearch(e.target.value)} />
           <Filter selectedCategory={selectedCategory} onChange={(e) => setSelectedCategory(e.target.value)} categories={categories} />
-          <Link href="/viewcart" className="btn btn-outline-primary w-full sm:w-auto text-center">
+          <Link href="/viewcart" className="btn btn-outline-success w-full sm:w-auto text-center">
             {TEXTS.VIEW_CARD}
           </Link>
         </div>

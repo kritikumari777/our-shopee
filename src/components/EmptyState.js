@@ -6,7 +6,7 @@ const EmptyState = ({ title, isViewCard }) => {
         <div className="container py-5 text-center">
             <h2 className="text-2xl font-semibold mb-4">{title}</h2>
             {isViewCard &&
-                <Link href="/" className="btn btn-primary">
+                <Link href="/" className="btn btn-outline-success">
                     {TEXTS.BACK_TO_SHOP}
                 </Link>
             }
